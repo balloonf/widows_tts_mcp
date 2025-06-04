@@ -53,7 +53,7 @@ Claude Desktop의 설정 파일에 다음을 추가하세요:
   "mcpServers": {
     "windows-tts": {
       "command": "uvx",
-      "args": ["windows-tts-mcp"]
+      "args": ["--from", "D:\\MCP\\windows_tts_mcp", "windows-tts-mcp"]
     }
   }
 }

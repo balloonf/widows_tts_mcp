@@ -94,7 +94,7 @@ def powershell_tts(text: str, rate: int = 0, volume: int = 100) -> bool:
             running_processes.append(process)
         
         # 프로세스 완료 대기
-        stdout, stderr = process.communicate(timeout=60)
+        stdout, stderr = process.communicate(timeout=180)
         
         # 완료된 프로세스 목록에서 제거
         with process_lock:
